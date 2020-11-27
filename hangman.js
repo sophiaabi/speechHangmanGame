@@ -4,7 +4,7 @@
 
   var speechGrammars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
         'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-        't', 'u', 'v', 'w', 'x', 'y', 'z', 'hint', 'reset', 'food', 'animals', 'cities', 'countries'];
+        't', 'u', 'v', 'w', 'x', 'y', 'z', 'clue', 'reset', 'food', 'animals', 'cities', 'countries'];
   
   var categories;         // Array of topics
   var chosenCategory;     // Selected catagory
