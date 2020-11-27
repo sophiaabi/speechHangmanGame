@@ -47,7 +47,7 @@
 
 body {
   background:#bedeeb;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: Tahoma,Verdana,Segoe,sans-serif; 
   color:white;
   height:100%;
   text-align:center;
@@ -68,7 +68,7 @@ canvas{
 }
 
 h1, h2, h3 {
-	font-family: 'Roboto', sans-serif;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
    margin:5px 0;
