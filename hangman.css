@@ -100,14 +100,14 @@ p{
   width:35px;
   height:30px;
   padding-top:10px;
-  background:white;
-  color:#c1d72e;
+  background:#909a9e;
+  color: white;
   cursor:pointer;
   @include corners(5px);
   border: solid 1px white;
     
     &:hover{
-      background:#c1d72e;
+      background:#909a9e;
       border: solid 1px white;
       color:white;
     }
@@ -162,7 +162,7 @@ button{
       @include transition;
       background:white;
       border: solid 1px white;
-      color:#c1d72e;
+      color:#909a9e;
     }
 }
 
