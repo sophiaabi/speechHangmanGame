@@ -75,13 +75,13 @@
   // Select Catagory
   var selectCat = function () {
     if (chosenCategory === categories[0]) {
-      catagoryName.innerHTML = "Category: Food";
+      catagoryName.innerHTML = "The Chosen Category Is Food";
     } else if (chosenCategory === categories[1]) {
-      catagoryName.innerHTML = "Category: Animals";
+      catagoryName.innerHTML = "The Chosen Category Is Animals";
     } else if (chosenCategory === categories[2]) {
-      catagoryName.innerHTML = "Category: Cities";
+      catagoryName.innerHTML = "The Chosen Category Is Cities";
     } else if (chosenCategory === categories[3]) {
-      catagoryName.innerHTML = "Category: Countries";
+      catagoryName.innerHTML = "The Chosen Category Is Countries";
     }
   }
 
@@ -125,7 +125,7 @@
         expression = 'c';
       }/*else if(expression == 'b'){
         expression = 'd'
-      }*/else if(expression == 'eve'){
+      }*/else if(expression == 'eve' || expression == 'eat' || expression == 'he'){
         expression = 'e';
       }/*else if(expression == 'b'){
         expression = 'f'
@@ -147,7 +147,7 @@
         expression = 'n'
       }else if(expression == 'b'){
         expression = 'o'
-      }*/else if(expression == 'she'){
+      }*/else if(expression == 'she' || expression =='key'){
         expression = 'p';
       }else if(expression == 'queue'){
         expression = 'q';
@@ -172,13 +172,20 @@
       }
   }
   
+  revealWord = function(){
+    for (var i = 0; i < word.length; i++) {
+      geusses[i].innerHTML = word[i];
+    }
+  }
+
   // Show lives
    comments = function () {
     var didWin = false;
     showLives.innerHTML = "You have " + lives + " lives";
     if (lives < 1) {
       showLives.innerHTML = "Game Over";
-      speak("Game Over, No lives left.")
+      revealWord();
+      speak("Game Over, No lives left. The word was "+ word)
     }
     for (var i = 0; i < geusses.length; i++) {
       if (counter + space === geusses.length) {
@@ -279,12 +286,12 @@
       var j = (word.indexOf(geuss));
       if (j === -1) {
         lives -= 1;
-        comments();
         animate();
-        speak("Incorrect");
-      } else {
+        speak("Incorrect. You have "+ lives+" lives left.");
         comments();
-        speak("Correct");
+      } else {
+        speak("Correct.");
+        comments();
       }
     }
   }
@@ -302,7 +309,6 @@
     chosenCategory = categories[categoryIndex];
     word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
     word = word.replace(/\s/g, "-");
-    console.log(word);
     buttons();
 
     geusses = [ ];
@@ -320,14 +326,13 @@
 
       hints = [
         ["Fast Food", "Common American Side", "Italian Food", "Lots of Bread and Cheese", "Healthy", "Cheesey", "Asian Food"],
-        ["Wears a Saddle", "Unicorn of the Sea", "Stripes", "Long Trunk", "Lives in the Snow", "Lives in a Pack", "Very Fast", "Has Scales"],
+        ["Wears a Saddle", "Unicorn of the Sea", "Stripes", "Long Neck", "Long Trunk", "Lives in the Snow", "Lives in a Pack", "Very Fast", "Has Scales"],
         ["Northern city in the UK", "Known for Fashion", "Spanish capital", "Netherlands capital", "Czech Republic capital", "Northwestern City in the US"],
         ["Cannot keep COVID under control", "Wine and Pasta", "Pyramids", "Land of Waterfalls in the North", "Amazon Rainforest", "Margeritas", "Mona Lisa"]
     ];
 
-    var catagoryIndex = categories.indexOf(chosenCategory);
     var hintIndex = chosenCategory.indexOf(word);
-    showClue.innerHTML = "Clue: - " +  hints [catagoryIndex][hintIndex];
+    showClue.innerHTML = "Clue: " +  hints [categoryIndex][hintIndex];
     //speak the hint to the user
     speak(showClue.innerHTML);
   };
