@@ -46,9 +46,9 @@
 }
 
 body {
-  background:#bedeeb;
+  background:#cae3fc;
   font-family: Tahoma,Verdana,Segoe,sans-serif; 
-  color:#5c6569;
+  color:#3c3e40;
   height:100%;
   text-align:center;
   font-size:18px;
@@ -100,14 +100,14 @@ p{
   width:35px;
   height:30px;
   padding-top:10px;
-  background:#d5dbde;
-  color: #5c6569;
+  background:#cedde0;
+  color: #3c3e40;
   cursor:pointer;
   @include corners(5px);
   border: none;
     
     &:hover{
-      background:#d5dbde;
+      background:#cedde0;
       border: none;
       color:white;
     }
@@ -147,8 +147,8 @@ p{
 
 button{
   @include corners (5px);
-  background:#d5dbde;
-  color:#5c6569;
+  background:#cedde0;
+  color:#3c3e40;
   border: none;
   text-decoration:none;
   cursor:pointer;
@@ -160,7 +160,7 @@ button{
   
     &:hover{
       @include transition;
-      background:#d5dbde;
+      background:#cedde0;
       border: none;
       color:#909a9e;
     }
