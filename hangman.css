@@ -100,7 +100,7 @@ p{
   width:35px;
   height:30px;
   padding-top:10px;
-  background:#cedde0;
+  background:#f0f0f5;
   color: #3c3e40;
   cursor:pointer;
   @include corners(5px);
