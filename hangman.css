@@ -62,8 +62,8 @@ body {
 
 
 canvas{
-  color: #1b255c;
-  border: #1b255c dashed 2px;
+  color: white;
+  border: white dashed 2px;
   padding:15px;
 }
 
