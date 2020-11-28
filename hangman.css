@@ -126,6 +126,7 @@ p{
   cursor:pointer;
   @include corners(5px);
   border-radius: 2px;
+  font-size: 1.2em;
     
     &:hover{
       background:#cedde0;
@@ -162,6 +163,7 @@ p{
 #mylives{
   text-align:center;
   display:block;
+  font-weight: bold;
 }
 
 button{
