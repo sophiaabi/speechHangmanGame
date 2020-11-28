@@ -60,16 +60,17 @@ body {
   margin:0 auto;
 }
 
-.column{
+.column {
   float: left;
-  width: 33.33%;
+  padding: 10px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
 }
 
 canvas{
