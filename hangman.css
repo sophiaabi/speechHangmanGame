@@ -124,11 +124,11 @@ p{
   color: #3c3e40;
   cursor:pointer;
   @include corners(5px);
-  border: #3c3e40 1px;
+  border: 1px solid #3c3e40;
     
     &:hover{
       background:#cedde0;
-      border: #3c3e40 1px;
+      border: 1px solid #3c3e40;
       color:white;
     }
 }
@@ -169,7 +169,7 @@ button{
   @include corners (5px);
   background:#cedde0;
   color:#3c3e40;
-  border: #3c3e40 1px;
+  border: 1px solid #3c3e40;
   text-decoration:none;
   cursor:pointer;
   font-size:1.6em;
@@ -181,7 +181,7 @@ button{
     &:hover{
       @include transition;
       background:#cedde0;
-      border: #3c3e40 1px;
+      border: 1px solid #3c3e40;
       color:#909a9e;
     }
 }
