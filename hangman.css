@@ -114,7 +114,6 @@ p{
 }
 
 #alphabet li {
-  position: relative;
   margin: 0 10px 10px 0;
   list-style:none;
   width:35px;
