@@ -65,11 +65,12 @@ body {
 }
 
 .left {
-  width: 30%;
+  width: 25%;
+  margin-left: 20px
 }
 
 .right {
-  width: 70%;
+  width: 75%;
 }
 
 canvas{
