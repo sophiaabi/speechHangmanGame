@@ -66,12 +66,12 @@ body {
 
 .left {
   float: center;
-  width: 35%;
+  width: 40%;
 }
 
 .right {
   float: center;
-  width: 65%;
+  width: 60%;
 }
 
 canvas{
