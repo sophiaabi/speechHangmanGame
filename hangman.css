@@ -113,6 +113,7 @@ p{
 }
 
 #alphabet li {
+  float: left;
   margin: 0 10px 10px 0;
   list-style:none;
   width:35px;
