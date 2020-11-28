@@ -181,7 +181,7 @@
   // Show lives
    comments = function () {
     var didWin = false;
-    showLives.innerHTML = "You have " + lives + " lives";
+    showLives.innerHTML = "You have " + lives + " lives left.";
     if (lives < 1) {
       showLives.innerHTML = "Game Over";
       revealWord();
