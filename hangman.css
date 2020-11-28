@@ -66,7 +66,6 @@ body {
 
 .left {
   width: 30%;
-  margin-left: 20px;
 }
 
 .right {
@@ -166,7 +165,6 @@ button{
   @include corners (5px);
   background:#cedde0;
   color:#3c3e40;
-  border: 1px solid #3c3e40;
   border-radius: 4px;
   text-decoration:none;
   cursor:pointer;
@@ -178,7 +176,6 @@ button{
     &:hover{
       @include transition;
       background:#cedde0;
-      border: 1px solid #3c3e40;
       color:#909a9e;
     }
 }
