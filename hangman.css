@@ -66,12 +66,12 @@ body {
 
 .left {
   float: center;
-  width: 28%;
+  width: 30%;
 }
 
 .right {
   float: center;
-  width: 72%;
+  width: 70%;
 }
 
 canvas{
@@ -172,7 +172,6 @@ button{
   text-decoration:none;
   cursor:pointer;
   font-size:1.6em;
-  padding: 20px 12px;
   margin: 10px;
   outline: none;
   
