@@ -54,10 +54,15 @@ body {
   font-size:18px;
 }
 
-.wrappper{
+.wrapper{
   @include clear;
   width:100%;
   margin:0 auto;
+}
+
+.column{
+  float: left;
+  width: 33.33%;
 }
 
 
