@@ -75,13 +75,13 @@
   // Select Catagory
   var selectCat = function () {
     if (chosenCategory === categories[0]) {
-      catagoryName.innerHTML = "The Chosen Category Is Food";
+      catagoryName.innerHTML = "Category: Food";
     } else if (chosenCategory === categories[1]) {
-      catagoryName.innerHTML = "The Chosen Category Is Animals";
+      catagoryName.innerHTML = "Category: Animals";
     } else if (chosenCategory === categories[2]) {
-      catagoryName.innerHTML = "The Chosen Category Is Cities";
+      catagoryName.innerHTML = "Category: Cities";
     } else if (chosenCategory === categories[3]) {
-      catagoryName.innerHTML = "The Chosen Category Is Countries";
+      catagoryName.innerHTML = "Category: Countries";
     }
   }
 
