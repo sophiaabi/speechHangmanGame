@@ -61,11 +61,11 @@ body {
 }
 
 .column {
-  float: center;
+  float: left;
 }
 
 .left {
-  float: center;
+  float: right;
   width: 20%;
 }
 
