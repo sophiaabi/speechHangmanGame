@@ -75,13 +75,13 @@
   // Select Catagory
   var selectCat = function () {
     if (chosenCategory === categories[0]) {
-      catagoryName.innerHTML = "Category: Food";
+      catagoryName.innerHTML = "The Chosen Category Is Food";
     } else if (chosenCategory === categories[1]) {
-      catagoryName.innerHTML = "Category: Animals";
+      catagoryName.innerHTML = "The Chosen Category Is Animals";
     } else if (chosenCategory === categories[2]) {
-      catagoryName.innerHTML = "Category: Cities";
+      catagoryName.innerHTML = "The Chosen Category Is Cities";
     } else if (chosenCategory === categories[3]) {
-      catagoryName.innerHTML = "Category: Countries";
+      catagoryName.innerHTML = "The Chosen Category Is Countries";
     }
   }
 
@@ -133,21 +133,21 @@
         expression = 'g'
       }*/else if(expression == 'each'){
         expression = 'h';
-      }else if(expression == 'eye'){
+      }else if(expression == 'eye' || expression == 'hi'){
         expression = 'i';
       }else if(expression == 'jay'){
         expression = 'j';
       }else if(expression == 'kay'){
         expression = 'k';
-      }else if(expression == 'oh'){
+      }else if(expression == 'el'){
         expression = 'l'
       }/*else if(expression == 'b'){
         expression = 'm'
-      }else if(expression == 'b'){
+      }*/else if(expression == 'end'){
         expression = 'n'
-      }else if(expression == 'b'){
+      }/*else if(expression == 'b'){
         expression = 'o'
-      }*/else if(expression == 'she' || expression =='key'){
+      }*/else if(expression =='key'){
         expression = 'p';
       }else if(expression == 'queue'){
         expression = 'q';
@@ -181,11 +181,11 @@
   // Show lives
    comments = function () {
     var didWin = false;
-    showLives.innerHTML = "You have " + lives + " lives left.";
+    showLives.innerHTML = "You have " + lives + " lives";
     if (lives < 1) {
       showLives.innerHTML = "Game Over";
       revealWord();
-      speak("Game Over, No lives left. The word was "+ word)
+      speak("Game Over. The word was "+ word)
     }
     for (var i = 0; i < geusses.length; i++) {
       if (counter + space === geusses.length) {
